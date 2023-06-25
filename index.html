@@ -8,7 +8,6 @@
     <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet" />
     <link href="/dist/tailwind.css" rel="stylesheet" />
     <link href="/styles.css" rel="stylesheet" />
-    <script src="script.js"></script>
   </head>
   <body class="scroll-smooth">
     <section id="nav" class="pb-16">
@@ -77,11 +76,6 @@
                     >About me</a
                   >
                   <a
-                    href="#resume"
-                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                    >Resume</a
-                  >
-                  <a
                     href="#contact"
                     class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
                     >Contact</a
@@ -106,12 +100,6 @@
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
               onclick="toggleMenu()"
               >About me</a
-            >
-            <a
-              href="#resume"
-              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-              onclick="toggleMenu()"
-              >Resume</a
             >
             <a
               href="#contact"
@@ -188,23 +176,22 @@
               projects.
             </p>
           </div>
-          <img
-            src="assets/photo.jpg"
-            class="mb-2 rounded-full md:rounded-none md:h-64 md:w-64"
-          />
+          <img src="assets/photo.jpg" class="mb-4 md:h-64 md:w-64" />
         </div>
       </div>
     </section>
 
-    <section id="resume" class="pt-6 md:pt-24">
-      <div class="container m-auto px-10 lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-10">
+    <section id="resume" class="pt-6 md:pt-20">
+      <div
+        class="container m-auto px-10 lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-10"
+      >
         <div>
           <div class="px-4 sm:px-0">
             <h3 class="text-base font-semibold leading-7 text-gray-900">
               Experience
             </h3>
           </div>
-          <div class="mt-6 border-t border-gray-300">
+          <div class="mt-6 border-t border-gray-900">
             <dl>
               <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt>
@@ -251,7 +238,7 @@
               Education
             </h3>
           </div>
-          <div class="mt-6 border-t border-gray-300">
+          <div class="mt-6 border-t border-gray-900">
             <dl>
               <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt>
@@ -273,6 +260,22 @@
                   best thesis project.
                 </dd>
               </div>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt>
+                  <h3 class="text-sm font-medium leading-6 text-gray-900">
+                    Master Studies in Architecture
+                  </h3>
+                  <div class="text-sm text-gray-700">
+                    <div>2023</div>
+                    <div>Poznań University of Technology</div>
+                  </div>
+                </dt>
+                <dd
+                  class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+                >
+                  Ongoing
+                </dd>
+              </div>
             </dl>
           </div>
         </div>
@@ -282,7 +285,7 @@
               Attachments
             </h3>
           </div>
-          <div class="mt-6 border-t border-gray-100">
+          <div class="mt-6 border-t border-gray-900">
             <div class="divide-y divide-gray-100">
               <div
                 class="py-6 mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0"
@@ -308,9 +311,35 @@
                         />
                       </svg>
                       <div class="ml-4 flex min-w-0 flex-1 gap-2">
-                        <span class="truncate font-medium"
-                          >CV.pdf</span
-                        >
+                        <span class="truncate font-medium">CV.pdf</span>
+                      </div>
+                    </div>
+                    <div class="ml-4 flex-shrink-0">
+                      <a
+                        href="#"
+                        class="font-medium text-indigo-600 hover:text-indigo-500"
+                        >Download</a
+                      >
+                    </div>
+                  </li>
+                  <li
+                    class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6"
+                  >
+                    <div class="flex w-0 flex-1 items-center">
+                      <svg
+                        class="h-5 w-5 flex-shrink-0 text-gray-400"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <div class="ml-4 flex min-w-0 flex-1 gap-2">
+                        <span class="truncate font-medium">Portfolio.pdf</span>
                       </div>
                     </div>
                     <div class="ml-4 flex-shrink-0">
@@ -339,7 +368,7 @@
                       </svg>
                       <div class="ml-4 flex min-w-0 flex-1 gap-2">
                         <span class="truncate font-medium"
-                          >Portfolio.pdf</span
+                          >Cover letter.pdf</span
                         >
                       </div>
                     </div>
@@ -351,36 +380,6 @@
                       >
                     </div>
                   </li>
-                  <li
-                  class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6"
-                >
-                  <div class="flex w-0 flex-1 items-center">
-                    <svg
-                      class="h-5 w-5 flex-shrink-0 text-gray-400"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <div class="ml-4 flex min-w-0 flex-1 gap-2">
-                      <span class="truncate font-medium"
-                        >Cover letter.pdf</span
-                      >
-                    </div>
-                  </div>
-                  <div class="ml-4 flex-shrink-0">
-                    <a
-                      href="#"
-                      class="font-medium text-indigo-600 hover:text-indigo-500"
-                      >Download</a
-                    >
-                  </div>
-                </li>
                 </ul>
               </div>
             </div>
@@ -390,10 +389,20 @@
     </section>
 
     <!-- contact -->
-    <section id="contact"></section>
+    <section id="contact" class="container m-auto py-8 md:py-20">
+      <div class="flex flex-col items-center">
+        <h2 class="text-3xl font-semibold mb-5">Reach me out!</h2>
+        <div class="mb-2">Email: email@email.com</div>
+        <div class="mb-2">Linkedin: email@email.com</div>
+      </div>
+    </section>
 
-    <footer>
-      @<span id="footer"></span>
+    <footer
+      class="text-gray-600 container p-4 flex justify-between m-auto text-sm"
+    >
+      <div>Zuzanna Kuszyk, email@email.com</div>
+      <span id="footer"></span>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
