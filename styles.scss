@@ -1,0 +1,15 @@
+body {
+  min-height: 100vh;
+  font-family: 'Now', sans-serif;
+}
+
+section {
+  width: 100%;
+}
+
+.resume-card {
+  .resume-divider {
+    border-bottom: 1px solid var(--bs-gray-dark);
+    width: 33%;
+  }
+}

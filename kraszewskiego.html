@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuzanna Kuszyk</title>
+    <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet" />
+    <link href="/dist/tailwind.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section id="nav" class="pb-16">
+      <!-- navbar -->
+      <nav class="bg-white fixed w-screen z-50">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                onclick="toggleMenu()"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-open"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-close"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+              id="menu"
+            >
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="./index.html#portfolio"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Portfolio</a
+                  >
+                  <a
+                    href="./index.html#about"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >About me</a
+                  >
+                  <a
+                    href="./index.html#resume"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Resume</a
+                  >
+                  <a
+                    href="./index.html#contact"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a
+              href="./index.html#portfolio"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              >Portfolio</a
+            >
+            <a
+              href="./index.html#about"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              aria-current="page"
+              >About me</a
+            >
+            <a
+              href="./index.html#resume"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              >Resume</a
+            >
+            <a
+              href="./index.html#contact"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="pt-10 px-3">
+      <div class="w-full flex items-center flex-col">
+        <h1
+          class="bg-white top-16 sticky text-2xl text-center w-full uppercase z-30"
+        >
+          Kraszewskiego 28
+        </h1>
+        <div class="flex items-center flex-col w-full lg:w-3/4">
+          <div>
+            <p class="pt-4">
+              The subject of the study is an architectural con- ception of a
+              multi-family residential building lo- cated on plots 26 and 28 on
+              Kraszewskiego street in Poznań. The study has been divided into
+              three project stages. The first stage includes detailed analyses
+              of the plot and the immediate area of the ul. Kraszewskiego. The
+              conclusions drawn from the analyses have formed fundamental
+              requirements in the subsequent project stage of the study. Ba- sed
+              on said requirements, an object was created, with a structure
+              well-suited to its surroundings. The functional-utility program
+              has been designed in line with ergonomic principles, moreover the
+              entire facility has been adapted for accessibilty needs of people
+              with disabilties. The solutions described in the architectural and
+              construction description have been formulated based on applicable
+              con- ditions and legal standards.
+            </p>
+            <p>
+              Polish society is characterized by a high incre- ase in the median
+              age, which has increased from 25.8 to 38.2 over the course of
+              seventy-two years. Many existing, but also newly built,
+              architectural structures are not adapted to the needs of the
+              future society. The life cycle of a building in Po- land is
+              approximately one hundred years, and the expected median age in
+              2050 is to be fifty years. It follows that most buildings,
+              especially those with a residential function, will lose their
+              functionality in the near future due to the changes that will take
+              place in the user.
+            </p>
+            <p>
+              The project is an attempt to respond to the ne- eds of the
+              recipient not only at the moment, but also in the future. By
+              ensuring the appropriate functionality of the building for users
+              in different age groups.
+            </p>
+          </div>
+          <div class="py-4">
+            <h2
+              class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg text-center w-full"
+            >
+              Axonometric
+            </h2>
+            <img
+              src="./assets/Kraszewskiego28/AKSONOMETRIA.jpg"
+            />
+          </div>
+
+          <div class="py-4">
+            <h2
+              class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center"
+            >
+              Floor plans
+            </h2>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Level -1
+              </h3>
+              <img
+                class="pt-1"
+                src="./assets/Kraszewskiego28/-1-1.jpg"
+              />
+            </div>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Level 0
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="./assets/Kraszewskiego28/0-1.jpg"
+              />
+            </div>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Level +1 (repetitive floor)
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="./assets/Kraszewskiego28/+1-1.jpg"
+              />
+            </div>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Level +4
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="./assets/Kraszewskiego28/4-1.jpg"
+              />
+            </div>
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Detail floor
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="./assets/Kraszewskiego28/detail.jpg"
+            />
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Visualizations
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="./assets/Kraszewskiego28/kraszewskiego.png"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="./assets/Kraszewskiego28/bird.jpg"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="./assets/Kraszewskiego28/inside.jpg"
+            />
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Model
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="./assets/Kraszewskiego28/model1.jpg"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="./assets/Kraszewskiego28/model2.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

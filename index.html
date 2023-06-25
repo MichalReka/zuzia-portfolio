@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuzanna Kuszyk</title>
+    <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet" />
+    <link href="/dist/tailwind.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body class="scroll-smooth">
+    <section id="nav" class="pb-16">
+      <!-- navbar -->
+      <nav class="bg-white fixed w-screen z-10">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                onclick="toggleMenu()"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-open"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-close"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+              id="menu"
+            >
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="#portfolio"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Portfolio</a
+                  >
+                  <a
+                    href="#about"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >About me</a
+                  >
+                  <a
+                    href="#resume"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Resume</a
+                  >
+                  <a
+                    href="#contact"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a
+              href="#portfolio"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
+              >Portfolio</a
+            >
+            <a
+              href="#about"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
+              >About me</a
+            >
+            <a
+              href="#resume"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
+              >Resume</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="pt-10">
+      <div
+        class="container m-auto row-span-full grid grid-cols-1 md:grid-cols-4 gap-4"
+      >
+        <div class="row-start-1 row-end-3 col-span-2">
+          <a href="./kraszewskiego.html"
+            ><img
+              class="grayscale hover:grayscale-0"
+              src="./assets/Kraszewskiego28/kraszewskiego.png"
+          /></a>
+        </div>
+        <div class="col-span-2">
+          <a href="./pool.html"
+            ><img
+              class="grayscale hover:grayscale-0"
+              src="./assets/urban/main.jpg"
+          /></a>
+        </div>
+        <div class="col-span-2">
+          <a href="./pool.html"
+            ><img
+              class="grayscale hover:grayscale-0"
+              src="./assets/hall/main.jpg"
+          /></a>
+        </div>
+        <div class="col-span-2">
+          <a href="./pool.html"
+            ><img
+              class="grayscale hover:grayscale-0"
+              src="./assets/pool/pool.jpg"
+          /></a>
+        </div>
+        <div class="col-span-2">
+          <a href="./kraszewskiego.html"
+            ><img
+              class="grayscale hover:grayscale-0"
+              src="./assets/Wiejska/1.png"
+          /></a>
+        </div>
+        <div></div>
+        <div class="col-span-2">
+          <a href="./kraszewskiego.html"
+            ><img
+              class="grayscale hover:grayscale-0"
+              src="./assets/Przedszkole/main.jpg"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="pt-6 md:pt-20">
+      <div>
+        <div
+          class="flex-col-reverse items-center md:flex-row flex md:items-end justify-center"
+        >
+          <div class="text-center md:text-left md:mr-14">
+            <h1 class="text-4xl font-semibold mb-3">Hi, I am Zuzanna</h1>
+            <p class="max-w-sm">
+              Aspiring architect delivering cutting-edge exterior and interior
+              projects.
+            </p>
+          </div>
+          <img
+            src="assets/photo.jpg"
+            class="mb-2 rounded-full md:rounded-none md:h-64 md:w-64"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="pt-6 md:pt-24">
+      <div class="container m-auto px-10 lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-10">
+        <div>
+          <div class="px-4 sm:px-0">
+            <h3 class="text-base font-semibold leading-7 text-gray-900">
+              Experience
+            </h3>
+          </div>
+          <div class="mt-6 border-t border-gray-300">
+            <dl>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt>
+                  <h3 class="text-sm font-medium leading-6 text-gray-900">
+                    Architect's assistant
+                  </h3>
+                  <div class="text-sm text-gray-700">
+                    <div>09.2021 - 12.2022</div>
+                    <div>AMJ studio, Poznań</div>
+                  </div>
+                </dt>
+                <dd
+                  class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+                >
+                  Participation in the creation of conceptual and technical
+                  designs of architecture and interiors. Performing model
+                  inventory of buildings, functional layouts and shopping lists
+                  for clients.
+                </dd>
+              </div>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt>
+                  <h3 class="text-sm font-medium leading-6 text-gray-900">
+                    Freelancer
+                  </h3>
+                  <div class="text-sm text-gray-700">
+                    <div>03.2021 - 09.2021</div>
+                    <div>Individual clients</div>
+                  </div>
+                </dt>
+                <dd
+                  class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+                >
+                  Creating visualizations and inventory of buildings. Creating
+                  technical drawings for a metallurgical company.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div>
+          <div class="px-4 sm:px-0">
+            <h3 class="text-base font-semibold leading-7 text-gray-900">
+              Education
+            </h3>
+          </div>
+          <div class="mt-6 border-t border-gray-300">
+            <dl>
+              <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt>
+                  <h3 class="text-sm font-medium leading-6 text-gray-900">
+                    Engineering Studies in Architecture
+                  </h3>
+                  <div class="text-sm text-gray-700">
+                    <div>2019-2023</div>
+                    <div>Poznań University of Technology</div>
+                  </div>
+                </dt>
+                <dd
+                  class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"
+                >
+                  Final result: Engineering studies completed with a maximum
+                  score of 5 Final Year Dissertation titled: Multi-family
+                  residential building with services on the ground floor at
+                  Kraszewskiego Street, nominated for the competition for the
+                  best thesis project.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div>
+          <div class="px-4 sm:px-0">
+            <h3 class="text-base font-semibold leading-7 text-gray-900">
+              Attachments
+            </h3>
+          </div>
+          <div class="mt-6 border-t border-gray-100">
+            <div class="divide-y divide-gray-100">
+              <div
+                class="py-6 mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0"
+              >
+                <ul
+                  role="list"
+                  class="divide-y divide-gray-100 border border-gray-200"
+                >
+                  <li
+                    class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6"
+                  >
+                    <div class="flex w-0 flex-1 items-center">
+                      <svg
+                        class="h-5 w-5 flex-shrink-0 text-gray-400"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <div class="ml-4 flex min-w-0 flex-1 gap-2">
+                        <span class="truncate font-medium"
+                          >CV.pdf</span
+                        >
+                      </div>
+                    </div>
+                    <div class="ml-4 flex-shrink-0">
+                      <a
+                        href="#"
+                        class="font-medium text-indigo-600 hover:text-indigo-500"
+                        >Download</a
+                      >
+                    </div>
+                  </li>
+                  <li
+                    class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6"
+                  >
+                    <div class="flex w-0 flex-1 items-center">
+                      <svg
+                        class="h-5 w-5 flex-shrink-0 text-gray-400"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <div class="ml-4 flex min-w-0 flex-1 gap-2">
+                        <span class="truncate font-medium"
+                          >Portfolio.pdf</span
+                        >
+                      </div>
+                    </div>
+                    <div class="ml-4 flex-shrink-0">
+                      <a
+                        href="#"
+                        class="font-medium text-indigo-600 hover:text-indigo-500"
+                        >Download</a
+                      >
+                    </div>
+                  </li>
+                  <li
+                  class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6"
+                >
+                  <div class="flex w-0 flex-1 items-center">
+                    <svg
+                      class="h-5 w-5 flex-shrink-0 text-gray-400"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <div class="ml-4 flex min-w-0 flex-1 gap-2">
+                      <span class="truncate font-medium"
+                        >Cover letter.pdf</span
+                      >
+                    </div>
+                  </div>
+                  <div class="ml-4 flex-shrink-0">
+                    <a
+                      href="#"
+                      class="font-medium text-indigo-600 hover:text-indigo-500"
+                      >Download</a
+                    >
+                  </div>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact"></section>
+
+    <footer>
+      @<span id="footer"></span>
+    </footer>
+  </body>
+</html>
