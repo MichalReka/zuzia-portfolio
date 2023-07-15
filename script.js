@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-document.getElementById('footer').innerHTML = "© Michał Ręka "+new Date().getFullYear();
+document.getElementById('footer').innerHTML = "© Zuzanna Kuszyk, "+new Date().getFullYear();
 
 function toggleMenu() {
   document.getElementById("mobile-menu").classList.toggle("hidden");

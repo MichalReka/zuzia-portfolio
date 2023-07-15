@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuzanna Kuszyk</title>
+    <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet" />
+    <link href="/dist/tailwind.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section id="nav" class="pb-16">
+      <!-- navbar -->
+      <nav class="bg-white fixed w-screen z-10">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                onclick="toggleMenu()"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-open"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-close"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+              id="menu"
+            >
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="../index.html#portfolio"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Portfolio</a
+                  >
+                  <a
+                    href="../index.html#about"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >About me</a
+                  >
+                  <a
+                    href="../index.html#resume"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Resume</a
+                  >
+                  <a
+                    href="../index.html#contact"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a
+              href="../index.html#portfolio"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              >Portfolio</a
+            >
+            <a
+              href="../index.html#about"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              aria-current="page"
+              >About me</a
+            >
+            <a
+              href="../index.html#resume"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              >Resume</a
+            >
+            <a
+              href="../index.html#contact"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="pt-10 px-3">
+      <div class="w-full flex items-center flex-col">
+        <h1 class="bg-white top-16 sticky text-2xl text-center w-full">
+          SWIMMING POOL BY CYBINA RIVER
+        </h1>
+        <div class="flex items-center flex-col w-full lg:w-3/4">
+          <div>
+            <p class="pt-4">
+              The subject of the study is an architectural conception of a
+              recreational building located on plot 24/6, 21 and 20/11 on Jana
+              Pawła II street in Poznań.
+            </p>
+            <p>
+              The plot is in the immediate vicinity of green areas. In the
+              vicinity of the Warta River and the lake Malta. The development
+              area is covered large amount of greenery both high and low,
+              however, the majority were wild bushes and juveniles trees. The
+              design goal was to keep like the largest amount of existing
+              greenery and planting more tall trees.
+            </p>
+            <p>
+              The shape of the plot is irregular. The design goal was to level
+              the land in part of the front plot, to ensure free vehicular and
+              pedestrian traffic. The back part stayed preserved in the existing
+              state. The shape of the study area had a significant impact on the
+              design process and the final form of the building.
+            </p>
+          </div>
+          <img src="../assets/pool/aksonometria.jpg" />
+          <h2 class="uppercase text-lg text-left w-full">Site analysis</h2>
+          <div class="flex gap-1"></div>
+          <img src="../assets/pool/pool.jpg" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
