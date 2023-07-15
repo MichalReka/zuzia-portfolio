@@ -8,24 +8,23 @@
     <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet" />
     <link href="/dist/tailwind.css" rel="stylesheet" />
     <link href="/styles.css" rel="stylesheet" />
-    <script src="script.js"></script>
   </head>
   <body>
     <section id="nav" class="pb-16">
       <!-- navbar -->
-      <nav class="bg-white fixed w-screen z-50">
+      <nav class="bg-white fixed w-screen z-10">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <!-- Mobile menu button-->
               <button
                 type="button"
-                class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                class="inline-flex items-center justify-center p-2 text-gray-700 hover:bg-opacity-90 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 onclick="toggleMenu()"
               >
-                <span class="sr-only">Open main menu</span>
+                <span class="sr-only">Otwórz menu główne</span>
                 <svg
                   class="block h-6 w-6"
                   fill="none"
@@ -66,23 +65,37 @@
                 <div class="flex space-x-">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
-                    href="../index.html#portfolio"
+                    href="#portfolio"
                     class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
                     >Portfolio</a
                   >
                   <a
-                    href="../index.html#about"
+                    href="#about"
                     class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
                     aria-current="page"
-                    >About me</a
+                    >O mnie</a
                   >
                   <a
-                    href="../index.html#contact"
+                    href="#contact"
                     class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                    >Contact</a
+                    >Kontakt</a
                   >
                 </div>
               </div>
+            </div>
+            <div>
+              <a
+                href=""
+                class="text-gray-900 text-sm md:text-base border-b border-black px-3 pb-1 hidden md:inline mr-4 uppercase"
+              >
+                pl
+              </a>
+              <a
+                href="./en/index.html"
+                class="text-gray-900 text-sm md:text-base px-3 hover:border-b hover:border-black pb-1 uppercase"
+              >
+                en
+              </a>
             </div>
           </div>
         </div>
@@ -91,20 +104,22 @@
         <div class="sm:hidden hidden" id="mobile-menu">
           <div class="space-y-1 px-2 pb-3 pt-2">
             <a
-              href="../index.html#portfolio"
+              href="#portfolio"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
               >Portfolio</a
             >
             <a
-              href="../index.html#about"
+              href="#about"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-              aria-current="page"
-              >About me</a
+              onclick="toggleMenu()"
+              >O mnie</a
             >
             <a
-              href="../index.html#contact"
+              href="#contact"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-              >Contact</a
+              onclick="toggleMenu()"
+              >Kontakt</a
             >
           </div>
         </div>
@@ -121,73 +136,66 @@
         <div class="flex items-center flex-col w-full lg:w-3/4">
           <div>
             <p class="pt-4">
-              The subject of the study is an architectural con- ception of a
-              multi-family residential building lo- cated on plots 26 and 28 on
-              Kraszewskiego street in Poznań. The study has been divided into
-              three project stages. The first stage includes detailed analyses
-              of the plot and the immediate area of the ul. Kraszewskiego. The
-              conclusions drawn from the analyses have formed fundamental
-              requirements in the subsequent project stage of the study. Ba- sed
-              on said requirements, an object was created, with a structure
-              well-suited to its surroundings. The functional-utility program
-              has been designed in line with ergonomic principles, moreover the
-              entire facility has been adapted for accessibilty needs of people
-              with disabilties. The solutions described in the architectural and
-              construction description have been formulated based on applicable
-              con- ditions and legal standards.
+              Przedmiotem pracy jest stworzenie koncepcji budynku mieszkalnego,
+              wielorodzinnego na dział- ce 26 i 28 przy ulicy Kraszewskiego w
+              Poznaniu. Praca została podzielona na trzy etapy projektowe.
+              Pierwszy z nich stanowi część analityczną, zawierającą szczegółowe
+              analizy opracowywanego obszaru oraz okolicy ulicy Kraszewskiego.
+              Wnioski z przeprowadzonych analiz stanowiły wytyczne do
+              projektowego etapu pracy. W oparciu o nie powstał obiekt wpisujący
+              się w otoczenie swoją formą. Program funkcjonalny został stworzony
+              zgodnie z zasadami ergonomii, ponadto całość obiektu została
+              dostosowana do potrzeb osób z niepełnosprawnościami. Rozwiązania w
+              opisie architektoniczno-budowlanym zostały opisane na podstawie
+              obowiązujących warunków oraz norm prawnych.
             </p>
             <p>
-              Polish society is characterized by a high incre- ase in the median
-              age, which has increased from 25.8 to 38.2 over the course of
-              seventy-two years. Many existing, but also newly built,
-              architectural structures are not adapted to the needs of the
-              future society. The life cycle of a building in Po- land is
-              approximately one hundred years, and the expected median age in
-              2050 is to be fifty years. It follows that most buildings,
-              especially those with a residential function, will lose their
-              functionality in the near future due to the changes that will take
-              place in the user.
+              Polskie społeczeństwo charakteryzuje się wysokim wzrostem mediany
+              wieku, która na przestrzeni siedemdziesięciu dwóch lat wzrosła z
+              25,8 do 38,2 lat. Wiele istniejących, ale także nowo powstają-
+              cych obiektów architektonicznych nie jest dosto- sowanych do
+              potrzeb przyszłego społeczeństwa. Cykl życia budynku w Polsce
+              wynosi około stu lat, a przewidywana mediana wieku w 2050 roku ma
+              wynieść pięćdziesiąt lat. Wynika z tego, że większość budynków,
+              zwłaszcza tych o funkcji mieszkalnej, w niedalekiej przyszłości
+              straci swoją funkcjonalność w związku ze zmianami, jakie zajdą w
+              użytkowniku.
             </p>
             <p>
-              The project is an attempt to respond to the ne- eds of the
-              recipient not only at the moment, but also in the future. By
-              ensuring the appropriate functionality of the building for users
-              in different age groups.
+              Projekt jest próbą odpowiedzi na potrzeby odbiorcy nie tylko w
+              chwili obecnej, ale również w przyszłości. Poprzez zapewnienie
+              odpowiedniej funkcjonalności budynku dla użytkowników w róż- nych
+              grupach wiekowych.
             </p>
           </div>
           <div class="py-4">
             <h2
               class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg text-center w-full"
             >
-              Axonometric
+              Aksonometria
             </h2>
-            <img
-              src="../assets/kraszewskiego/AKSONOMETRIA.jpg"
-            />
+            <img src="../assets/kraszewskiego/axonometry.jpg" />
           </div>
 
           <div class="py-4">
             <h2
               class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center"
             >
-              Floor plans
+              Rzuty
             </h2>
             <div>
               <h3
                 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
               >
-                Level -1
+                Poziom -1
               </h3>
-              <img
-                class="pt-1"
-                src="../assets/kraszewskiego/-1-1.jpg"
-              />
+              <img class="pt-1" src="../assets/kraszewskiego/-1-1.jpg" />
             </div>
             <div>
               <h3
                 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
               >
-                Level 0
+                Poziom 0
               </h3>
               <img
                 loading="lazy"
@@ -199,7 +207,7 @@
               <h3
                 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
               >
-                Level +1 (repetitive floor)
+                Poziom +1 (powtarzalna kondygnacja)
               </h3>
               <img
                 loading="lazy"
@@ -211,7 +219,7 @@
               <h3
                 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
               >
-                Level +4
+                Poziom +4
               </h3>
               <img
                 loading="lazy"
@@ -224,7 +232,7 @@
             <h2
               class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
             >
-              Detail floor
+              Rzut detal
             </h2>
             <img
               loading="lazy"
@@ -236,7 +244,7 @@
             <h2
               class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
             >
-              Visualizations
+              Wizualizacje
             </h2>
             <img
               loading="lazy"
@@ -277,7 +285,7 @@
     <div class="container border-t border-black md:mt-8 m-auto">
       <section id="contact" class="container m-auto py-8 md:py-20">
         <div class="flex md:justify-evenly flex-col items-center md:flex-row">
-          <h2 class="text-4xl font-semibold mb-5 md:mb-0">Reach me out!</h2>
+          <h2 class="text-4xl font-semibold mb-5 md:mb-0">Kontakt</h2>
           <div class="text-center md:text-left">
             <div class="mb-2">Email: email@email.com</div>
             <div class="mb-2">Linkedin: email@email.com</div>
@@ -285,10 +293,12 @@
           </div>
         </div>
       </section>
-  
+
       <footer class="py-1 mt-4 md:mt-10 text-xs text-right mr-4">
         <span class="w-full" id="footer"></span>
       </footer>
+
+      <script src="script.js"></script>
     </div>
   </body>
 </html>

@@ -8,7 +8,6 @@
     <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet" />
     <link href="/dist/tailwind.css" rel="stylesheet" />
     <link href="/styles.css" rel="stylesheet" />
-    <script src="script.js"></script>
   </head>
   <body>
     <section id="nav" class="pb-16">
@@ -20,12 +19,12 @@
               <!-- Mobile menu button-->
               <button
                 type="button"
-                class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                class="inline-flex items-center justify-center p-2 text-gray-700 hover:bg-opacity-90 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 onclick="toggleMenu()"
               >
-                <span class="sr-only">Open main menu</span>
+                <span class="sr-only">Otwórz menu główne</span>
                 <svg
                   class="block h-6 w-6"
                   fill="none"
@@ -66,28 +65,37 @@
                 <div class="flex space-x-">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
-                    href="../index.html#portfolio"
+                    href="#portfolio"
                     class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
                     >Portfolio</a
                   >
                   <a
-                    href="../index.html#about"
+                    href="#about"
                     class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
                     aria-current="page"
-                    >About me</a
+                    >O mnie</a
                   >
                   <a
-                    href="../index.html#resume"
+                    href="#contact"
                     class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                    >Resume</a
-                  >
-                  <a
-                    href="../index.html#contact"
-                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                    >Contact</a
+                    >Kontakt</a
                   >
                 </div>
               </div>
+            </div>
+            <div>
+              <a
+                href=""
+                class="text-gray-900 text-sm md:text-base border-b border-black px-3 pb-1 hidden md:inline mr-4 uppercase"
+              >
+                pl
+              </a>
+              <a
+                href="./en/index.html"
+                class="text-gray-900 text-sm md:text-base px-3 hover:border-b hover:border-black pb-1 uppercase"
+              >
+                en
+              </a>
             </div>
           </div>
         </div>
@@ -96,25 +104,22 @@
         <div class="sm:hidden hidden" id="mobile-menu">
           <div class="space-y-1 px-2 pb-3 pt-2">
             <a
-              href="../index.html#portfolio"
+              href="#portfolio"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
               >Portfolio</a
             >
             <a
-              href="../index.html#about"
+              href="#about"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-              aria-current="page"
-              >About me</a
+              onclick="toggleMenu()"
+              >O mnie</a
             >
             <a
-              href="../index.html#resume"
+              href="#contact"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-              >Resume</a
-            >
-            <a
-              href="../index.html#contact"
-              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-              >Contact</a
+              onclick="toggleMenu()"
+              >Kontakt</a
             >
           </div>
         </div>
@@ -123,38 +128,177 @@
 
     <section class="pt-10 px-3">
       <div class="w-full flex items-center flex-col">
-        <h1 class="bg-white top-16 sticky text-2xl text-center w-full">
-          SWIMMING POOL BY CYBINA RIVER
+        <h1
+          class="bg-white top-16 sticky text-2xl text-center w-full uppercase z-30"
+        >
+          Kraszewskiego 28
         </h1>
         <div class="flex items-center flex-col w-full lg:w-3/4">
           <div>
             <p class="pt-4">
-              The subject of the study is an architectural conception of a
-              recreational building located on plot 24/6, 21 and 20/11 on Jana
-              Pawła II street in Poznań.
+              Przedmiotem pracy jest stworzenie koncepcji budynku mieszkalnego,
+              wielorodzinnego na dział- ce 26 i 28 przy ulicy Kraszewskiego w
+              Poznaniu. Praca została podzielona na trzy etapy projektowe.
+              Pierwszy z nich stanowi część analityczną, zawierającą szczegółowe
+              analizy opracowywanego obszaru oraz okolicy ulicy Kraszewskiego.
+              Wnioski z przeprowadzonych analiz stanowiły wytyczne do
+              projektowego etapu pracy. W oparciu o nie powstał obiekt wpisujący
+              się w otoczenie swoją formą. Program funkcjonalny został stworzony
+              zgodnie z zasadami ergonomii, ponadto całość obiektu została
+              dostosowana do potrzeb osób z niepełnosprawnościami. Rozwiązania w
+              opisie architektoniczno-budowlanym zostały opisane na podstawie
+              obowiązujących warunków oraz norm prawnych.
             </p>
             <p>
-              The plot is in the immediate vicinity of green areas. In the
-              vicinity of the Warta River and the lake Malta. The development
-              area is covered large amount of greenery both high and low,
-              however, the majority were wild bushes and juveniles trees. The
-              design goal was to keep like the largest amount of existing
-              greenery and planting more tall trees.
+              Polskie społeczeństwo charakteryzuje się wysokim wzrostem mediany
+              wieku, która na przestrzeni siedemdziesięciu dwóch lat wzrosła z
+              25,8 do 38,2 lat. Wiele istniejących, ale także nowo powstają-
+              cych obiektów architektonicznych nie jest dosto- sowanych do
+              potrzeb przyszłego społeczeństwa. Cykl życia budynku w Polsce
+              wynosi około stu lat, a przewidywana mediana wieku w 2050 roku ma
+              wynieść pięćdziesiąt lat. Wynika z tego, że większość budynków,
+              zwłaszcza tych o funkcji mieszkalnej, w niedalekiej przyszłości
+              straci swoją funkcjonalność w związku ze zmianami, jakie zajdą w
+              użytkowniku.
             </p>
             <p>
-              The shape of the plot is irregular. The design goal was to level
-              the land in part of the front plot, to ensure free vehicular and
-              pedestrian traffic. The back part stayed preserved in the existing
-              state. The shape of the study area had a significant impact on the
-              design process and the final form of the building.
+              Projekt jest próbą odpowiedzi na potrzeby odbiorcy nie tylko w
+              chwili obecnej, ale również w przyszłości. Poprzez zapewnienie
+              odpowiedniej funkcjonalności budynku dla użytkowników w róż- nych
+              grupach wiekowych.
             </p>
           </div>
-          <img src="../assets/pool/aksonometria.jpg" />
-          <h2 class="uppercase text-lg text-left w-full">Site analysis</h2>
-          <div class="flex gap-1"></div>
-          <img src="../assets/pool/pool.jpg" />
+          <div class="py-4">
+            <h2
+              class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg text-center w-full"
+            >
+              Aksonometria
+            </h2>
+            <img src="../assets/kraszewskiego/AKSONOMETRIA.jpg" />
+          </div>
+
+          <div class="py-4">
+            <h2
+              class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center"
+            >
+              Rzuty
+            </h2>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Poziom -1
+              </h3>
+              <img class="pt-1" src="../assets/kraszewskiego/-1-1.jpg" />
+            </div>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Poziom 0
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="../assets/kraszewskiego/0-1.jpg"
+              />
+            </div>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Poziom +1 (powtarzalna kondygnacja)
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="../assets/kraszewskiego/+1-1.jpg"
+              />
+            </div>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Poziom +4
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="../assets/kraszewskiego/4-1.jpg"
+              />
+            </div>
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Rzut detal
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/kraszewskiego/detail.jpg"
+            />
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Wizualizacje
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/kraszewskiego/kraszewskiego.png"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/kraszewskiego/bird.jpg"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/kraszewskiego/inside.jpg"
+            />
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Model
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/kraszewskiego/model1.jpg"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/kraszewskiego/model2.jpg"
+            />
+          </div>
         </div>
       </div>
     </section>
+    <div class="container border-t border-black md:mt-8 m-auto">
+      <section id="contact" class="container m-auto py-8 md:py-20">
+        <div class="flex md:justify-evenly flex-col items-center md:flex-row">
+          <h2 class="text-4xl font-semibold mb-5 md:mb-0">Kontakt</h2>
+          <div class="text-center md:text-left">
+            <div class="mb-2">Email: email@email.com</div>
+            <div class="mb-2">Linkedin: email@email.com</div>
+            <div class="mb-2">Poznań</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="py-1 mt-4 md:mt-10 text-xs text-right mr-4">
+        <span class="w-full" id="footer"></span>
+      </footer>
+
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
