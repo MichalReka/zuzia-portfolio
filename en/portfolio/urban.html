@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,162 +9,255 @@
     <link href="../../dist/tailwind.css" rel="stylesheet" />
     <link href="../../styles.css" rel="stylesheet" />
   </head>
-  
-<body>
-    <section id="nav" class="pb-16">
-        <!-- navbar -->
-        <nav class="bg-white fixed w-screen z-10">
-            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div class="relative flex h-16 items-center justify-between">
-                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                        <!-- Mobile menu button-->
-                        <button type="button"
-                            class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                            aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMenu()">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true" id="hamburger-open">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true" id="hamburger-close">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start" id="menu">
-                        <div class="hidden sm:ml-6 sm:block">
-                            <div class="flex space-x-">
-                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="../index.html#portfolio"
-                                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium">Portfolio</a>
-                                <a href="../index.html#about"
-                                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                                    aria-current="page">About me</a>
-                                <a href="../index.html#contact"
-                                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="sm:hidden hidden" id="mobile-menu">
-                <div class="space-y-1 px-2 pb-3 pt-2">
-                    <a href="../index.html#portfolio"
-                        class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium">Portfolio</a>
-                    <a href="../index.html#about"
-                        class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-                        aria-current="page">About me</a>
-                    <a href="../index.html#contact"
-                        class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium">Contact</a>
-                </div>
+  <body>
+    <section id="nav" class="pb-16">
+      <!-- navbar -->
+      <nav class="bg-white fixed w-screen z-10">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                onclick="toggleMenu()"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-open"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-close"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
             </div>
-        </nav>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+              id="menu"
+            >
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="../index.html#portfolio"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Portfolio</a
+                  >
+                  <a
+                    href="../index.html#about"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >About me</a
+                  >
+                  <a
+                    href="../index.html#contact"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a
+              href="../index.html#portfolio"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              >Portfolio</a
+            >
+            <a
+              href="../index.html#about"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              aria-current="page"
+              >About me</a
+            >
+            <a
+              href="../index.html#contact"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
     </section>
 
     <section class="pt-10 px-3">
-        <div class="w-full flex items-center flex-col">
-            <h1 class="bg-white top-16 sticky text-2xl text-center w-full">
-              Reconstruction of the urban market in Pleszew
-            </h1>
-            <div class="flex items-center flex-col w-full lg:w-3/4">
-                <div>
-                    <p class="pt-4">
-                        In the project concerning the reconstruction of the urban market in Pleszew, an innovative
-                        concept has been designed, which is based on the use of a modular structure for the square's
-                        flooring. This project was developed taking into account the existing market grid, allowing for
-                        the introduction of modular small architectural objects.
-                    </p>
-                    <p>
-                        The new structures not only provide space for relaxation and leisure but also areas dedicated to
-                        greenery and gastronomy. By employing a modular design, it is possible to flexibly adapt these
-                        structures to different functions and the needs of the local community.
-
-                        To counter the dominance of concrete, it was decided to replace a portion of the flooring with
-                        greenery. This initiative also enables effective management of rainwater, which accumulates
-                        throughout the market space. Through appropriate rainwater management, it is possible to
-                        minimize the consequences related to excessive flooding or runoff, thus contributing to the
-                        improvement of the urban environment's quality.
-                    </p>
-                    <p>
-                        The reconstruction of the urban market in Pleszew, based on the designed concept, has increased
-                        the attractiveness of this location by offering residents and visitors diverse opportunities for
-                        relaxation, enjoying green spaces, and indulging in gastronomic offerings.
-                    </p>
-                </div>
-                
+      <div class="w-full flex items-center flex-col">
+        <h1 class="bg-white top-16 sticky text-2xl text-center w-full">
+          Reconstruction of the urban market in Pleszew
+        </h1>
+        <div class="flex items-center flex-col w-full lg:w-3/4">
+          <div>
+            <p class="pt-4">
+              In the project concerning the reconstruction of the urban market
+              in Pleszew, an innovative concept has been designed, which is
+              based on the use of a modular structure for the square's flooring.
+              This project was developed taking into account the existing market
+              grid, allowing for the introduction of modular small architectural
+              objects.
+            </p>
+            <p>
+              The new structures not only provide space for relaxation and
+              leisure but also areas dedicated to greenery and gastronomy. By
+              employing a modular design, it is possible to flexibly adapt these
+              structures to different functions and the needs of the local
+              community. To counter the dominance of concrete, it was decided to
+              replace a portion of the flooring with greenery. This initiative
+              also enables effective management of rainwater, which accumulates
+              throughout the market space. Through appropriate rainwater
+              management, it is possible to minimize the consequences related to
+              excessive flooding or runoff, thus contributing to the improvement
+              of the urban environment's quality.
+            </p>
+            <p>
+              The reconstruction of the urban market in Pleszew, based on the
+              designed concept, has increased the attractiveness of this
+              location by offering residents and visitors diverse opportunities
+              for relaxation, enjoying green spaces, and indulging in
+              gastronomic offerings.
+            </p>
+          </div>
+        </div>
+        <div class="py-4">
+          <h2
+            class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center"
+          >
+            SITE ANALYSIS
+          </h2>
+          <div>
+            <h3
+              class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+            >
+              Landscape
+            </h3>
+            <img
+              loading="lazy"
+              class="pt-1"
+              src="../../assets/urban/analiza zieleni.jpg"
+            />
+          </div>
+          <div>
+            <h3
+              class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+            >
+              Composition
+            </h3>
+            <img
+              loading="lazy"
+              class="pt-1"
+              src="../../assets/urban/analiza kompozycyjna.jpg"
+            />
+          </div>
+        </div>
+        <div class="py-4">
+          <h2
+            class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center"
+          >
+            Floor Plan
+          </h2>
+          <div>
+            <h3
+              class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+            >
+              Market square
+            </h3>
+            <img
+              class="pt-1"
+              src="../../assets/urban/rzut posadzki rynku .jpg"
+            />
+          </div>
+          <div>
+            <h3
+              class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+            >
+              Rainwater menagment diagram
+            </h3>
+            <img
+              loading="lazy"
+              class="pt-1"
+              src="../../assets/urban/schemat zagospodarowania wody opadowej.jpg"
+            />
+          </div>
+        </div>
+        <div class="pb-4">
+          <h2
+            class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+          >
+            Before/After
+          </h2>
+          zdjęcie stanu istniejącego obok wizualizacja w kolorze
+          <img
+            loading="lazy"
+            class="pt-1 w-full text-center"
+            src="../../assets/urban/zdjęcie stanu istniejącego.jpg"
+          />
+          <img
+            loading="lazy"
+            class="pt-1 w-full text-center"
+            src="../../assets/urban/wizualizacja rynku .jpg"
+          />
+          <img
+            loading="lazy"
+            class="pt-1 w-full text-center"
+            src="../../assets/urban/zdjęcie stanu istniejącego (2).jpg"
+          />
+          <img
+            loading="lazy"
+            class="pt-1 w-full text-center"
+            src="../../assets/urban/wizualizacja rynku od strony ratusza.jpg"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="container border-t border-black md:mt-8 m-auto">
+      <section id="contact" class="container m-auto py-8 md:py-20">
+        <div class="flex md:justify-evenly flex-col items-center md:flex-row">
+          <h2 class="text-4xl font-semibold mb-5 md:mb-0">Kontakt</h2>
+          <div class="text-center md:text-left">
+            <div class="mb-2">Email: zuzannakuszyk.kontakt@gmail.com</div>
+            <div class="mb-2">
+              Linkedin: https://www.linkedin.com/in/zuzanna-kuszyk-70b57626b/
             </div>
-            <div class="py-4">
-              <h2 class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center">
-                SITE ANALYSIS
-              </h2>
-              <div>
-                <h3 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full">
-                  Landscape
-                </h3>
-                <img loading="lazy" class="pt-1" src="../../assets/urban/analiza zieleni.jpg" />
-              </div>
-              <div>
-                <h3 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full">
-                  Composition
-                </h3>
-                <img loading="lazy" class="pt-1" src="../../assets/urban/analiza kompozycyjna.jpg" />
-              </div>
-            </div>
-            <div class="py-4">
-              <h2 class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center">
-                Floor Plan
-              </h2>
-              <div>
-                <h3 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full">
-                 Market square
-                </h3>
-                <img class="pt-1" src="../../assets/urban/rzut posadzki rynku .jpg" />
-              </div>
-              <div>
-                <h3 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full">
-                  Rainwater menagment diagram
-                </h3>
-                <img loading="lazy" class="pt-1" src="../../assets/urban/schemat zagospodarowania wody opadowej.jpg" />
-              </div>
-              
-           
-            </div>
-            <div class="pb-4">
-              <h2 class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full">
-                Before/After
-              </h2>
-              zdjęcie stanu istniejącego obok wizualizacja w kolorze
-              <img loading="lazy" class="pt-1 w-full text-center" src="../../assets/urban/zdjęcie stanu istniejącego.jpg" />
-              <img loading="lazy" class="pt-1 w-full text-center" src="../../assets/urban/wizualizacja rynku .jpg" />
-              <img loading="lazy" class="pt-1 w-full text-center" src="../../assets/urban/zdjęcie stanu istniejącego (2).jpg" />
-              <img loading="lazy" class="pt-1 w-full text-center" src="../../assets/urban/wizualizacja rynku od strony ratusza.jpg" />
-            </div>
-            
+            <div class="mb-2">Localisation: Poznań</div>
           </div>
         </div>
       </section>
-      <div class="container border-t border-black md:mt-8 m-auto">
-        <section id="contact" class="container m-auto py-8 md:py-20">
-          <div class="flex md:justify-evenly flex-col items-center md:flex-row">
-            <h2 class="text-4xl font-semibold mb-5 md:mb-0">Kontakt</h2>
-            <div class="text-center md:text-left">
-              <div class="mb-2">Email: zuzannakuszyk.kontakt@gmail.com</div>
-              <div class="mb-2">Linkedin: https://www.linkedin.com/in/zuzanna-kuszyk-70b57626b/</div>
-              <div class="mb-2">Localisation: Poznań</div>
-            </div>
-          </div>
-        </section>
-    
-        <footer class="py-1 mt-4 md:mt-10 text-xs text-right mr-4">
-          <span class="w-full" id="footer"></span>
-        </footer>
-    
-        <script src="../script.js"></script>
-      </div>
-</body>
 
+      <footer class="py-1 mt-4 md:mt-10 text-xs text-right mr-4">
+        <span class="w-full" id="footer"></span>
+      </footer>
+
+      <script src="../script.js"></script>
+    </div>
+  </body>
 </html>

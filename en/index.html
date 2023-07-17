@@ -19,7 +19,7 @@
               <!-- Mobile menu button-->
               <button
                 type="button"
-                class="inline-flex items-center justify-center p-2 text-gray-700 hover:bg-opacity-90 hover:bg-black  hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                class="inline-flex items-center justify-center p-2 text-gray-700 hover:bg-opacity-90 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 onclick="toggleMenu()"
@@ -84,10 +84,16 @@
               </div>
             </div>
             <div>
-              <a href="../index.html" class="text-gray-900 text-sm md:text-base px-3 hover:border-b hover:border-black pb-1 mr-4 uppercase">
+              <a
+                href="../index.html"
+                class="text-gray-900 text-sm md:text-base px-3 hover:border-b hover:border-black pb-1 mr-4 uppercase"
+              >
                 pl
               </a>
-              <a href="" class="text-gray-900 text-sm md:text-base border-b border-black px-3 pb-1 hidden md:inline uppercase">
+              <a
+                href=""
+                class="text-gray-900 text-sm md:text-base border-b border-black px-3 pb-1 hidden md:inline uppercase"
+              >
                 en
               </a>
             </div>
@@ -173,22 +179,29 @@
 
     <!-- about -->
     <section id="about" class="pt-6 md:pt-20">
-      <div>
-        <div
-          class="flex-col-reverse items-center md:flex-row flex md:items-end justify-center"
-        >
-          <div class="text-center md:text-left md:mr-14">
-            <h1 class="text-4xl font-semibold mb-3">Hi, I am Zuzanna</h1>
-            <p class="max-w-sm">
-              Aspiring architect delivering cutting-edge exterior and interior
-              projects.
-            </p>
-          </div>
-          <img src="../assets/photo.jpg" class="mb-4 md:h-64 md:w-64" />
+      <div
+        class="md:flex-row flex flex-col-reverse md:items-end container m-auto md:px-20 lg:px-40"
+      >
+        <div class="text-center md:text-left md:mr-14">
+          <h1 class="text-4xl font-semibold mb-6 md:mb-12">Zuzanna Kuszyk</h1>
+          <p>
+            I am an ambitious architecture student currently pursuing my
+            master's degree at Poznan University of Technology. I completed my
+            bachelor degree with the highest grade and received a rector's
+            scholarship for academic achievements. Gaining experience for over a
+            year in a design studio has allowed me to develop my design skills
+            in both interior and exterior designs. I am interested in designing
+            from both conceptual and technical perspectives. In my projects, I
+            strive for a holistic approach that combines beauty with
+            functionality.
+          </p>
         </div>
+        <img
+          src="../assets/photo.jpg"
+          class="m-auto h-48 w-48 md:h-64 md:w-64"
+        />
       </div>
     </section>
-
     <section id="resume" class="pt-6 md:pt-20">
       <div
         class="container m-auto px-10 lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-10"
@@ -402,13 +415,34 @@
         <div class="flex md:justify-evenly flex-col items-center md:flex-row">
           <h2 class="text-4xl font-semibold mb-5 md:mb-0">Reach me out!</h2>
           <div class="text-center md:text-left">
-            <div class="mb-2">Email: zuzannakuszyk.kontakt@gmail.com</div>
-            <div class="mb-2">Linkedin: https://www.linkedin.com/in/zuzanna-kuszyk-70b57626b/</div>
-            <div class="mb-2">Poznań</div>
+            <div class="mb-2 flex gap-3 items-center">
+              <img
+                class="h-5 w-5"
+                src="../assets/icons/email.svg"
+                alt="Linkedin: "
+              />
+              <span>zuzannakuszyk.kontakt@gmail.com</span>
+            </div>
+            <div class="mb-2 flex gap-3 items-center">
+              <img
+                class="h-5 w-5"
+                src="../assets/icons/linkedin.svg"
+                alt="Linkedin: "
+              />
+              <span>linkedin.com/in/zuzanna-kuszyk-70b57626b/</span>
+            </div>
+            <div class="mb-2 flex gap-3 items-center">
+              <img
+                class="h-5 w-5"
+                src="../assets/icons/location.svg"
+                alt="Localisation: "
+              />
+              <span>Poznań</span>
+            </div>
           </div>
         </div>
       </section>
-  
+
       <footer class="py-1 mt-4 md:mt-10 text-xs text-right mr-4">
         <span class="w-full" id="footer"></span>
       </footer>
