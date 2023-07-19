@@ -3,6 +3,3 @@ node_modules/
 
 # TypeScript cache
 *.tsbuildinfo
-
-# unused assets
-*.pdf
