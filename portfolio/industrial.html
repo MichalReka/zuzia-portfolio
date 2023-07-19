@@ -1,192 +1,324 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuzanna Kuszyk</title>
+    <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet" />
+    <link href="../dist/tailwind.css" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zuzanna Kuszyk</title>
-  <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet" />
-  <link href="../dist/tailwind.css" rel="stylesheet" />
-  <link href="../styles.css" rel="stylesheet" />
-</head>
-
-<body>
-  <section id="nav" class="pb-16">
-    <!-- navbar -->
-    <nav class="bg-white fixed w-screen z-50">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button-->
-            <button type="button"
-              class="inline-flex items-center justify-center p-2 text-gray-700 hover:bg-opacity-90 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMenu()">
-              <span class="sr-only">Otwórz menu główne</span>
-              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                aria-hidden="true" id="hamburger-open">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                aria-hidden="true" id="hamburger-close">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start" id="menu">
-            <div class="hidden sm:ml-6 sm:block">
-              <div class="flex space-x-">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="../index.html#portfolio"
-                  class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium">Portfolio</a>
-                <a href="../index.html#about"
-                  class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                  aria-current="page">O mnie</a>
-                <a href="../index.html#contact"
-                  class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium">Kontakt</a>
+  <body>
+    <section id="nav" class="pb-16">
+      <!-- navbar -->
+      <nav class="bg-white fixed w-screen z-50">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center p-2 text-gray-700 hover:bg-opacity-90 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                onclick="toggleMenu()"
+              >
+                <span class="sr-only">Otwórz menu główne</span>
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-open"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  id="hamburger-close"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+              id="menu"
+            >
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="../index.html#portfolio"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Portfolio</a
+                  >
+                  <a
+                    href="../index.html#about"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >O mnie</a
+                  >
+                  <a
+                    href="#contact"
+                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                    >Kontakt</a
+                  >
+                </div>
               </div>
             </div>
+            <div>
+              <a
+                href=""
+                class="text-gray-900 text-sm md:text-base border-b border-black px-3 pb-1 hidden md:inline mr-4 uppercase"
+              >
+                pl
+              </a>
+              <a
+                href="../en/portfolio/industrial.html"
+                class="text-gray-900 text-sm md:text-base px-3 hover:border-b hover:border-black pb-1 uppercase"
+              >
+                en
+              </a>
+            </div>
           </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a
+              href="../index.html#portfolio"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
+              >Portfolio</a
+            >
+            <a
+              href="../index.html#about"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
+              >O mnie</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
+              >Kontakt</a
+            >
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="pt-10 px-3">
+      <div class="w-full flex items-center flex-col">
+        <h1
+          class="bg-white top-16 sticky text-2xl text-center w-full uppercase z-30"
+        >
+          Projekt hali przemysłowej
+        </h1>
+        <div class="flex items-center flex-col w-full lg:w-3/4">
           <div>
-            <a href=""
-              class="text-gray-900 text-sm md:text-base border-b border-black px-3 pb-1 hidden md:inline mr-4 uppercase">
-              pl
-            </a>
-            <a href="/en/portfolio/industrial.html"
-              class="text-gray-900 text-sm md:text-base px-3 hover:border-b hover:border-black pb-1 uppercase">
-              en
-            </a>
+            <p class="pt-4">
+              Innowacyjny projekt hali przemysłowej zbudowanej przy współpracy z
+              budynkiem biurowym został stworzony z myślą o efektywności pracy,
+              komforcie pracowników oraz zrównoważonym rozwoju. Ten kompleks
+              zapewnia optymalne warunki dla produkcji domów prefabrykowanych,
+              jednocześnie tworząc inspirującą i przyjazną atmosferę.
+            </p>
+            <p>
+              Centralnym elementem projektu jest atrium, które pełni rolę
+              przestrzeni relaksu i spotkań dla pracowników. Jest ono wyposażone
+              w bogatą roślinność, co tworzy przyjemne i zdrowe środowisko.
+              Dostęp do zieleni jest dostępny dla wszystkich pracowników,
+              zapewniając im możliwość odpoczynku na świeżym powietrzu w czasie
+              przerw.Projekt uwzględnia również zapewnienie odpowiedniej liczby
+              miejsc parkingowych na powierzchni naziemnej. Pracownicy oraz
+              goście mają łatwy dostęp do bezpiecznego parkowania, co zapewnia
+              wygodę i efektywność logistyczną. Kolejnym ważnym elementem
+              projektu są pasy zieleni wysokiej, które zostały zaprojektowane
+              wokół kompleksu. Te obszary zieleni nie tylko pełnią funkcję
+              estetyczną, ale również przyczyniają się do poprawy jakości
+              powietrza i stwarzają zdrowsze środowisko pracy.
+            </p>
+            <p>
+              Budynek biurowy został zaprojektowany tak, aby zapewnić jasne,
+              przestronne biura typu open space. Duże okna pozwalają na dostęp
+              do naturalnego światła, co wpływa na komfort pracy i poprawia
+              efektywność. Otwarta przestrzeń sprzyja również swobodnej
+              komunikacji i współpracy między pracownikami.
+            </p>
           </div>
-        </div>
-      </div>
-
-      <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="sm:hidden hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-          <a href="../index.html#portfolio"
-            class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-            onclick="toggleMenu()">Portfolio</a>
-          <a href="../index.html#about"
-            class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-            onclick="toggleMenu()">O mnie</a>
-          <a href="../index.html#contact"
-            class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-            onclick="toggleMenu()">Kontakt</a>
-        </div>
-      </div>
-    </nav>
-  </section>
-
-  <section class="pt-10 px-3">
-    <div class="w-full flex items-center flex-col">
-      <h1 class="bg-white top-16 sticky text-2xl text-center w-full uppercase z-30">
-        Projekt hali przemysłowej
-      </h1>
-      <div class="flex items-center flex-col w-full lg:w-3/4">
-        <div>
-          <p class="pt-4">
-            Innowacyjny projekt hali przemysłowej zbudowanej przy współpracy z budynkiem biurowym został stworzony z
-            myślą o efektywności pracy, komforcie pracowników oraz zrównoważonym rozwoju. Ten kompleks zapewnia
-            optymalne warunki dla produkcji domów prefabrykowanych, jednocześnie tworząc inspirującą i przyjazną
-            atmosferę.
-          </p>
-          <p>
-            Centralnym elementem projektu jest atrium, które pełni rolę przestrzeni relaksu i spotkań dla pracowników.
-            Jest ono wyposażone w bogatą roślinność, co tworzy przyjemne i zdrowe środowisko. Dostęp do zieleni jest
-            dostępny dla wszystkich pracowników, zapewniając im możliwość odpoczynku na świeżym powietrzu w czasie
-            przerw.Projekt uwzględnia również zapewnienie odpowiedniej liczby miejsc parkingowych na powierzchni
-            naziemnej. Pracownicy oraz goście mają łatwy dostęp do bezpiecznego parkowania, co zapewnia wygodę i
-            efektywność logistyczną. Kolejnym ważnym elementem projektu są pasy zieleni wysokiej, które zostały
-            zaprojektowane wokół kompleksu.
-            Te obszary zieleni nie tylko pełnią funkcję estetyczną, ale również przyczyniają się do poprawy jakości
-            powietrza i stwarzają zdrowsze środowisko pracy.
-          </p>
-          <p>
-            Budynek biurowy został zaprojektowany tak, aby zapewnić jasne, przestronne biura typu open space. Duże okna
-            pozwalają na dostęp do naturalnego światła, co wpływa na komfort pracy i poprawia efektywność. Otwarta
-            przestrzeń sprzyja również swobodnej komunikacji i współpracy między pracownikami.
-          </p>
-        </div>
-      </div>
-      <div class="pb-4">
-        <h2 class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full">
-          Projekt zagospodarowania terenu
-          wycentrować ryzunek z innymi
-        </h2>
-        <img loading="lazy" class="pt-1 w-full text-center" src="../assets/industrial/PZT.jpg" />
-      </div>
-      <div class="py-4">
-        <h2 class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center">
-          Rzuty
-        </h2>
-        dodać zestawienie powierzchni przyklejone do końca rzutów
-        <div>
-          <h3 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full">
-            Poziom 0
-          </h3>
-          <img loading="lazy" class="pt-1" src="../assets/industrial/rzut poziom 0.jpg" />
-        </div>
-        <div>
-          <h3 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full">
-            Poziom +1
-          </h3>
-          <img loading="lazy" class="pt-1" src="../assets/industrial/rzut poziom +1.jpg" />
-        </div>
-        <div>
-          <h3 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full">
-            Poziom +2
-          </h3>
-          <img loading="lazy" class="pt-1" src="../assets/industrial/Rzut dachu.jpg" />
-        </div>
-      </div>
-      <div class="pb-4">
-        <h2 class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full">
-          Przekroje
-        </h2>
-        <img loading="lazy" class="pt-1 w-full text-center" src="../assets/industrial/przekrój a-a.jpg" />
-        <img loading="lazy" class="pt-1 w-full text-center" src="../assets/industrial/przekrój b-b.jpg" />
-      </div>
-      <div class="pb-4">
-        <h2 class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full">
-          Detal
-        </h2>
-        <h3 class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full">
-          Łączenie dachu ze ścianą/ mocowanie płyty warstwowej do słupa/ montaż drzwi w płycie warstwowej
-        </h3>
-        <img loading="lazy" class="pt-1 w-full text-center"
-          src="../assets/industrial/Detal łączenie dachu ze ścianą, mocowanie płyty warstwowej do słupa, montaż drzwi w płycie warstwowej.jpg" />
-
-
-      </div>
-    </div>
-    <div class="pb-4">
-      <h2 class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full">
-        Wizualizacje
-      </h2>
-      <img loading="lazy" class="pt-1 w-full text-center" src="../assets/industrial/wizualizacja hali przemysłowej.jpg a-a.jpg" />
-      <img loading="lazy" class="pt-1 w-full text-center" src="../assets/industrial/wizualizacja hali przemysłowej od frontu.jpg b-b.jpg" />
-      <img loading="lazy" class="pt-1 w-full text-center" src="../assets/industrial/projekt wnętrza stołówki.jpg" />
-    </div>
-    </div>
-  </section>
-  <div class="container border-t border-black md:mt-8 m-auto">
-    <section id="contact" class="container m-auto py-8 md:py-20">
-      <div class="flex md:justify-evenly flex-col items-center md:flex-row">
-        <h2 class="text-4xl font-semibold mb-5 md:mb-0">Kontakt</h2>
-        <div class="text-center md:text-left">
-          <div class="mb-2">Email: zuzannakuszyk.kontakt@gmail.com</div>
-          <div class="mb-2">Linkedin: https://www.linkedin.com/in/zuzanna-kuszyk-70b57626b/</div>
-          <div class="mb-2">Lokalizacja: Poznań</div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Projekt zagospodarowania terenu
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/industrial/PZT.jpg"
+            />
+          </div>
+          <div class="py-4">
+            <h2
+              class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center"
+            >
+              Rzuty
+            </h2>
+            dodać zestawienie powierzchni przyklejone do końca rzutów
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Poziom 0
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="../assets/industrial/rzut poziom 0.jpg"
+              />
+            </div>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Poziom +1
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="../assets/industrial/rzut poziom +1.jpg"
+              />
+            </div>
+            <div>
+              <h3
+                class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+              >
+                Poziom +2
+              </h3>
+              <img
+                loading="lazy"
+                class="pt-1"
+                src="../assets/industrial/Rzut dachu.jpg"
+              />
+            </div>
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Przekroje
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/industrial/przekrój a-a.jpg"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/industrial/przekrój b-b.jpg"
+            />
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Detal
+            </h2>
+            <h3
+              class="sticky top-28 bg-white z-10 pt-4 mb-2 uppercase text-base text-center w-full"
+            >
+              Łączenie dachu ze ścianą/ mocowanie płyty warstwowej do słupa/
+              montaż drzwi w płycie warstwowej
+            </h3>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/industrial/Detal łączenie dachu ze ścianą, mocowanie płyty warstwowej do słupa, montaż drzwi w płycie warstwowej.jpg"
+            />
+          </div>
+          <div class="pb-4">
+            <h2
+              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+            >
+              Wizualizacje
+            </h2>
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/industrial/wizualizacja hali przemysłowej.jpg a-a.jpg"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/industrial/wizualizacja hali przemysłowej od frontu.jpg b-b.jpg"
+            />
+            <img
+              loading="lazy"
+              class="pt-1 w-full text-center"
+              src="../assets/industrial/projekt wnętrza stołówki.jpg"
+            />
+          </div>
         </div>
       </div>
     </section>
+    <div class="container border-t border-black md:mt-8 m-auto">
+      <section id="contact" class="container m-auto py-8 md:py-20">
+        <div class="flex md:justify-evenly flex-col items-center md:flex-row">
+          <h2 class="text-4xl font-semibold mb-5 md:mb-0">Kontakt</h2>
+          <div class="text-center md:text-left">
+            <div class="mb-2 flex gap-3 items-center">
+              <img
+                class="h-5 w-5"
+                src="../assets/icons/email.svg"
+                alt="Email: "
+              />
+              <span>zuzannakuszyk.kontakt@gmail.com</span>
+            </div>
+            <div class="mb-2 flex gap-3">
+              <img
+                class="h-5 w-5"
+                src="../assets/icons/linkedin.svg"
+                alt="Linkedin: "
+              />
+              <span>linkedin.com/in/zuzanna-kuszyk-70b57626b/</span>
+            </div>
+            <div class="mb-2 flex gap-3 items-center">
+              <img
+                class="h-5 w-5"
+                src="../assets/icons/location.svg"
+                alt="Lokalizacja: "
+              />
+              <span>Poznań</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <footer class="py-1 mt-4 md:mt-10 text-xs text-right mr-4">
-      <span class="w-full" id="footer"></span>
-    </footer>
-
-    <script src="../script.js"></script>
-  </div>
-</body>
-
+      <footer class="py-1 mt-4 md:mt-10 text-xs text-right mr-4">
+        <span class="w-full" id="footer"></span>
+      </footer>
+    </div>
+    <script src="../global.js"></script>
+  </body>
 </html>

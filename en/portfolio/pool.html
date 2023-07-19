@@ -19,7 +19,7 @@
               <!-- Mobile menu button-->
               <button
                 type="button"
-                class="inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                class="inline-flex items-center justify-center p-2 text-gray-700 hover:bg-opacity-90 hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 onclick="toggleMenu()"
@@ -65,23 +65,37 @@
                 <div class="flex space-x-">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a
-                    href="../index.html#portfolio"
-                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                    >Portfolio</a
-                  >
-                  <a
-                    href="../index.html#about"
-                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                    aria-current="page"
-                    >About me</a
-                  >
-                  <a
-                    href="../index.html#contact"
-                    class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
-                    >Contact</a
-                  >
+                  href="../index.html#portfolio"
+                  class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                  >Portfolio</a
+                >
+                <a
+                  href="../index.html#about"
+                  class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                  aria-current="page"
+                  >About me</a
+                >
+                <a
+                  href="#contact"
+                  class="text-gray-900 hover:border-b hover:border-b-gray-800 px-3 py-2 text-sm font-medium"
+                  >Contact</a
+                >
                 </div>
               </div>
+            </div>
+            <div>
+              <a
+                href="../../portfolio/pool.html"
+                class="text-gray-900 text-sm md:text-base px-3 hover:border-b hover:border-black pb-1 mr-4 uppercase"
+              >
+                pl
+              </a>
+              <a
+                href=""
+                class="text-gray-900 text-sm md:text-base border-b border-black px-3 pb-1 hidden md:inline uppercase"
+              >
+                en
+              </a>
             </div>
           </div>
         </div>
@@ -92,17 +106,19 @@
             <a
               href="../index.html#portfolio"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
               >Portfolio</a
             >
             <a
               href="../index.html#about"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
-              aria-current="page"
+              onclick="toggleMenu()"
               >About me</a
             >
             <a
-              href="../index.html#contact"
+              href="#contact"
               class="text-gray-900 hover:border-b hover:border-b-gray-800 block px-3 py-2 text-base font-medium"
+              onclick="toggleMenu()"
               >Contact</a
             >
           </div>
@@ -227,7 +243,7 @@
               />
               <span>zuzannakuszyk.kontakt@gmail.com</span>
             </div>
-            <div class="mb-2 flex gap-3 items-center">
+            <div class="mb-2 flex gap-3">
               <img
                 class="h-5 w-5"
                 src="../../assets/icons/linkedin.svg"
@@ -251,6 +267,6 @@
         <span class="w-full" id="footer"></span>
       </footer>
     </div>
-    <script src="../script.js"></script>
+    <script src="../../global.js"></script>
   </body>
 </html>
