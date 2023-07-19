@@ -177,9 +177,9 @@
                 Zieleni
               </h3>
               <img
-                loading="lazy"
                 class="pt-1"
                 src="../assets/urban/analiza zieleni.jpg"
+                alt="analiza zieleni"
               />
             </div>
             <div>
@@ -189,13 +189,13 @@
                 Kompozycji
               </h3>
               <img
-                loading="lazy"
                 class="pt-1"
                 src="../assets/urban/analiza kompozycyjna.jpg"
+                alt="analiza kompozycyjna"
               />
             </div>
           </div>
-          <div class="py-4">
+          <div class="pb-4">
             <h2
               class="sticky top-14 bg-white z-20 pt-10 uppercase text-lg w-full text-center"
             >
@@ -210,6 +210,7 @@
               <img
                 class="pt-1"
                 src="../assets/urban/rzut posadzki rynku .jpg"
+                alt="rzut posadzki rynku"
               />
             </div>
             <div>
@@ -222,6 +223,7 @@
                 loading="lazy"
                 class="pt-1"
                 src="../assets/urban/schemat zagospodarowania wody opadowej.jpg"
+                alt="schemat zagospodarowania wody opadowej"
               />
             </div>
           </div>
@@ -231,37 +233,47 @@
             >
               Wizualizacje
             </h2>
-            zdjęcie stanu istniejącego obok wizualizacja w kolorze
-            <img
-              loading="lazy"
-              class="pt-1 w-full text-center"
-              src="../assets/urban/zdjęcie stanu istniejącego.jpg"
-            />
-            <img
-              loading="lazy"
-              class="pt-1 w-full text-center"
-              src="../assets/urban/wizualizacja rynku .jpg"
-            />
-            <img
-              loading="lazy"
-              class="pt-1 w-full text-center"
-              src="../assets/urban/zdjęcie stanu istniejącego (2).jpg"
-            />
-            <img
-              loading="lazy"
-              class="pt-1 w-full text-center"
-              src="../assets/urban/wizualizacja rynku od strony ratusza.jpg"
-            />
+            <div class="w-full flex flex-col lg:flex-row gap-1 pb-1">
+              <img
+                loading="lazy"
+                class="grayscale lg:w-1/2"
+                src="../assets/urban/zdjęcie stanu istniejącego.jpg"
+                alt="zdjęcie stanu istniejącego"
+              />
+              <img
+                loading="lazy"
+                class="lg:w-1/2"
+                src="../assets/urban/wizualizacja rynku .jpg"
+                alt="wizualizacja rynku"
+              />
+            </div>
+            <div class="flex flex-col lg:flex-row gap-1">
+              <img
+                loading="lazy"
+                class="grayscale lg:w-1/2"
+                src="../assets/urban/zdjęcie stanu istniejącego (2).jpg"
+                alt="zdjęcie stanu istniejącego 2"
+              />
+              <img
+                loading="lazy"
+                class="lg:w-1/2"
+                src="../assets/urban/wizualizacja rynku od strony ratusza.jpg"
+                alt="wizualizacja rynku od strony ratusza"
+              />
+            </div>
           </div>
         </div>
+        <p class="py-2">
+          tekst
+        </p>
       </div>
     </section>
     <div class="container border-t border-black md:mt-8 m-auto">
       <section id="contact" class="container m-auto py-8 md:py-20">
         <div class="flex md:justify-evenly flex-col items-center md:flex-row">
           <h2 class="text-4xl font-semibold mb-5 md:mb-0">Kontakt</h2>
-          <div class="text-center md:text-left">
-            <div class="mb-2 flex gap-3 items-center">
+          <div class="px-10 text-center md:text-left">
+            <div class="mb-2 flex gap-3 text-left items-center">
               <img
                 class="h-5 w-5"
                 src="../assets/icons/email.svg"
@@ -269,7 +281,7 @@
               />
               <span>zuzannakuszyk.kontakt@gmail.com</span>
             </div>
-            <div class="mb-2 flex gap-3">
+            <div class="mb-2 flex gap-3 text-left">
               <img
                 class="h-5 w-5"
                 src="../assets/icons/linkedin.svg"
@@ -277,7 +289,7 @@
               />
               <span>linkedin.com/in/zuzanna-kuszyk-70b57626b/</span>
             </div>
-            <div class="mb-2 flex gap-3 items-center">
+            <div class="mb-2 flex gap-3 text-left items-center">
               <img
                 class="h-5 w-5"
                 src="../assets/icons/location.svg"
