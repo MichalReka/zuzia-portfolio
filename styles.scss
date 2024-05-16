@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  font-family: 'Now', sans-serif;
+  font-family: "Now", sans-serif;
 }
 
 section {
@@ -11,5 +11,17 @@ section {
   .resume-divider {
     border-bottom: 1px solid var(--bs-gray-dark);
     width: 33%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .arrow-large-screen {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .arrow-small-screen {
+    display: none;
   }
 }

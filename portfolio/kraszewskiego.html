@@ -10,6 +10,14 @@
     <link href="../styles.css" rel="stylesheet" />
   </head>
   <body>
+    <a href="#nav" class="fixed right-5 bottom-7 arrow-small-screen bg-white p-1 outline outline-black z-50 outline-1">
+      <img
+      class="h-4 w-4"
+      src="../assets/icons/arrow.svg"
+      alt="arrow"
+      class="up-arrow"
+    />
+    </a>
     <section id="nav" class="pb-16">
       <!-- navbar -->
       <nav class="bg-white fixed w-screen z-50">
@@ -57,6 +65,15 @@
                 </svg>
               </button>
             </div>
+            <a href="#nav" class="hidden absolute -right-10 arrow-large-screen">
+              <img
+              class="h-5 w-5"
+              src="../assets/icons/arrow.svg"
+              alt="arrow"
+              class="up-arrow"
+            />
+            </a>
+            
             <div
               class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
               id="menu"
@@ -99,7 +116,6 @@
             </div>
           </div>
         </div>
-
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="sm:hidden hidden" id="mobile-menu">
           <div class="space-y-1 px-2 pb-3 pt-2">
@@ -263,7 +279,7 @@
           </div>
           <div class="pb-4">
             <h2
-              class="sticky mb-2 top-24 bg-white z-20 uppercase text-lg text-center w-full"
+              class="sticky mb-2 pt-4 top-20 bg-white z-20 uppercase text-lg text-center w-full"
             >
               Model
             </h2>
@@ -279,7 +295,8 @@
             />
           </div>
           <p class="py-2">
-            2023| autorka inż. arch. Zuzanna Kuszyk| promotor dr inż. arch. Magda Matuszewska
+            2023| autorka inż. arch. Zuzanna Kuszyk| promotor dr inż. arch.
+            Magda Matuszewska
           </p>
         </div>
       </div>
